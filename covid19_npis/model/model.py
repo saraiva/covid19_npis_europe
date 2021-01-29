@@ -29,8 +29,8 @@ log = logging.getLogger(__name__)
 @pm.model()
 def main_model(modelParams):
     """
-    ToDo:
-    -----
+    ToDo
+    ----
     Create Docstring for this function.
     """
 
@@ -155,4 +155,7 @@ def main_model(modelParams):
     likelihood = yield studentT_likelihood(
         modelParams, positive_tests, total_tests, deaths_delayed
     )
-    return likelihood
+
+    # Removed return value because it produces strange behaviour in prior predictive
+    # InferecneData
+    # return likelihood

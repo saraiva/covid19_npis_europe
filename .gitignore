@@ -141,5 +141,9 @@ data/Germany_landkreise*
 # figures
 *.pdf
 
+scripts/figures/*/*/*.png
+scripts/figures/*/*.png
+scripts/figures/*.png
 # traces
 *.h5
+scripts/traces/*
